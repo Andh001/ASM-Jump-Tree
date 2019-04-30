@@ -11,7 +11,7 @@ This code will generate the OUTPUT.gv file
 it can be viewed by Graphviz
 Download Link : https://graphviz.gitlab.io/download/
 
-# Try to analysis this!
+# Try to analyze this!
 
 0040B226  /$>MOV EDI,EDI\
 0040B228  |.>PUSH EBP\
