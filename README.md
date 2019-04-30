@@ -31,3 +31,31 @@ Download Link : https://graphviz.gitlab.io/download/
 
 # Now see this!
 ![alt text](https://github.com/Andh001/ASM-Jump-Tree/blob/master/output.png)
+
+
+Tree building is very simple..\
+This tree is totally depends on the jump instructions..\
+
+There are two types of jump instruction\
+Conditional and Non conditional\
+
+for conditional jump instructions we have two jumps ie true jump and false jump..(jne, je, jz, etc..)\
+and for non conditional jump instruction ("JMP") have only one location..\
+
+Logic:
+
+global array = [] # contains the list of trees...
+
+
+process until any jmp instructions is not found and store it into a array\
+  if jump is conditional then create its 2 empty childs\
+  else it must non conditional like "jmp" instruction then create only one empty child\
+  
+  above root node will going to be store as tree into the global array..\
+  
+  Now next time we are going to process other instructions..\
+  and also create the empty nodes.. before this we are going to search into the global array..\
+  if node is found then simply attach according to jump condition else add new root node into global array..!\
+  
+  
+  
